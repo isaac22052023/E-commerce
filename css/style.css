@@ -480,6 +480,8 @@ main {
     margin-bottom: 0.5rem;
     list-style: none;
     cursor: pointer;
+
+    color: var(--color-gray4);
 }
 
 .copyright {
