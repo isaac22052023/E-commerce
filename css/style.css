@@ -476,7 +476,7 @@ main {
     color: var(--color-white);
 }
 
-.links-uteis ul li{
+.links-uteis ul a li{
     margin-bottom: 0.5rem;
     list-style: none;
     cursor: pointer;
