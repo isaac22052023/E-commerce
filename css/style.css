@@ -147,6 +147,24 @@ header {
    width: 115%;
 }
 
+.animacao-header {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-direction: alternate;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
 /*media queries header*/
  @media (max-width: 800px){
     .logo{
@@ -337,9 +355,22 @@ main {
     color: var(--color-white);
 }
 
-.exclusive-container img {
+.animacao-exclusive-container {
     max-width: 500px;
-}
+    opacity: 0;
+    animation: slide-in 3s forwards;
+    animation-play-state: paused;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 
 
 /*media queries main content*/
